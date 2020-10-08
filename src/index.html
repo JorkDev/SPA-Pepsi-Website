@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi SPA</title>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#/" target="_blank" rel="noopener noreferrer"><img src="./img/logo.png" alt="logo" class="logo"/></a>
+            <div class="toggleMenu" onClick="menuToggle();"></div>
+            <ul class="navigation">
+                <li><a href="#/" rel="noopener noreferrer" class="toggleMenu" onClick="menuToggle();">Home</a></li>
+                <li><a href="#/products" rel="noopener noreferrer" class="toggleMenu" onClick="menuToggle();">Products</a></li>
+                <li><a href="#/news" rel="noopener noreferrer" class="toggleMenu" onClick="menuToggle();">What's New</a></li>
+                <li><a href="#/newsletter" rel="noopener noreferrer" class="toggleMenu" onClick="menuToggle();">Newsletter</a></li>
+                <li><a href="#/contact" rel="noopener noreferrer" class="toggleMenu" onClick="menuToggle();">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content" id="root">
+        </div> 
+    </section>
+    <script>
+        function imgSlider(anything){
+    document.querySelector('.pepsi').src = anything;
+}
+function changeBgColor(color){
+    const sec = document.querySelector('.sec');
+    sec.style.backgroundColor  = color;
+}
+function menuToggle(){
+    const toggleMenu = document.querySelector('.toggleMenu');
+    const navigation = document.querySelector('.navigation');
+
+    toggleMenu.classList.toggle('active');
+    navigation.classList.toggle('active');
+}
+    </script>
+</body>
+</html>
