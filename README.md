@@ -1,4 +1,4 @@
-# SPA-Pepsi-Website-responsive-and-working-form
+# SPA Pepsi Landing Page
 A single page application made node and webpack. No framework for style used, is only pure CSS.
 1. Install webpack: npm i webpack -D (on this step webpack-cli will be also installed)
 2. Install webpack server for testing on localhost: npm i webpack-dev-server -D
